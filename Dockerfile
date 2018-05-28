@@ -92,3 +92,4 @@ EXPOSE 6006
 
 ENV PATH "/home/app/.local/bin:$PATH"
 CMD jupyter notebook --port=8888 --ip=0.0.0.0
+
