@@ -3,7 +3,6 @@ ARG cudnn_version=7
 #FROM nvidia/cuda:${cuda_version}-cudnn${cudnn_version}-devel
 FROM nvidia/cuda:9.0-devel-ubuntu16.04
 # Pin CuDNN 
-RUN apt-get remove -y libcudnn7
 RUN apt-get update && apt-get install -y --allow-downgrades --no-install-recommends \ 
     libcudnn7=7.0.5.15-1+cuda9.0 \
     libcudnn7-dev=7.0.5.15-1+cuda9.0
