@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       python3-pip \
       python3-venv \
       python3-dev \
-      python3-setuptools
+      python3-setuptools \
+      python3-tk
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-utils git curl vim unzip openssh-client wget \
@@ -92,4 +93,3 @@ EXPOSE 6006
 
 ENV PATH "/home/app/.local/bin:$PATH"
 CMD jupyter notebook --port=8888 --ip=0.0.0.0
-
