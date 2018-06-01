@@ -7,6 +7,7 @@ RUN apt-get remove -y libcudnn7
 RUN apt-get update && apt-get install -y --allow-downgrades --no-install-recommends \ 
     libcudnn7=7.0.5.15-1+cuda9.0 \
     libcudnn7-dev=7.0.5.15-1+cuda9.0
+RUN apt-mark hold libcudnn7 libcudnn7-dev
 
 # Supress warnings about missing front-end. As recommended at:
 # http://stackoverflow.com/questions/22466255/is-it-possibe-to-answer-dialog-questions-when-installing-under-docker
