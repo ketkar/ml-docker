@@ -76,7 +76,8 @@ RUN pip3 install \
       requests \
       opencv-python \
       theano \
-      keras
+      keras \
+      kaggle
 
 RUN pip3 install\
       imgaug \
