@@ -57,7 +57,7 @@ WORKDIR /workspace
 
 RUN pip3 install \
       sklearn_pandas \
-      tensorflow-gpu
+      tensorflow-gpu==1.5.0
 
 RUN pip3 install \
       bcolz \
